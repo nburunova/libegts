@@ -52,7 +52,7 @@ var (
 				RecipientServiceType:     AuthService,
 				RecordDataSet: RecordDataSet{
 					RecordData{
-						SubrecordType:   egtsSrTermIdentity,
+						SubrecordType:   SrTermIdentityType,
 						SubrecordLength: 5,
 						SubrecordData:   &testEgtsSrTermIdentity,
 					},

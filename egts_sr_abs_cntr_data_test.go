@@ -42,7 +42,7 @@ func TestEgtsSrAbsCntrDataRs(t *testing.T) {
 	egtsSrAbsCntrDataRDBytes := append([]byte{0x19, 0x04, 0x00}, srAbsCntrDataBytes...)
 	egtsSrAbsCntrDataRD := RecordDataSet{
 		RecordData{
-			SubrecordType:   egtsSrAbsCntrData,
+			SubrecordType:   SrAbsCntrDataType,
 			SubrecordLength: testEgtsSrAbsCntrData.Length(),
 			SubrecordData:   &testEgtsSrAbsCntrData,
 		},

@@ -39,7 +39,7 @@ var (
 					RecipientServiceType:     AuthService,
 					RecordDataSet: RecordDataSet{
 						RecordData{
-							SubrecordType:   egtsSrRecordResponse,
+							SubrecordType:   SrRecordResponseType,
 							SubrecordLength: 3,
 							SubrecordData: &SrResponse{
 								ConfirmedRecordNumber: 95,

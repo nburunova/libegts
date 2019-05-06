@@ -67,7 +67,7 @@ func TestEgtsSrAdSensorsDataaRs(t *testing.T) {
 	adSensDataRDBytes := append([]byte{0x12, 0x1C, 0x00}, srAdSensorsDataBytes...)
 	adSensDataRD := RecordDataSet{
 		RecordData{
-			SubrecordType:   egtsSrAdSensorsData,
+			SubrecordType:   SrAdSensorsDataType,
 			SubrecordLength: testEgtsSrAdSensorsData.Length(),
 			SubrecordData:   &testEgtsSrAdSensorsData,
 		},

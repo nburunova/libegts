@@ -48,7 +48,7 @@ func TestEgtsSrStateDataRs(t *testing.T) {
 	stateDataRDBytes := append([]byte{0x14, 0x05, 0x00}, testSrStateDataBytes...)
 	stateDataRD := RecordDataSet{
 		RecordData{
-			SubrecordType:   egtsSrStateData,
+			SubrecordType:   SrStateDataType,
 			SubrecordLength: 5,
 			SubrecordData:   &testEgtsSrStateData,
 		},

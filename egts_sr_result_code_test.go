@@ -36,7 +36,7 @@ var (
 				RecipientServiceType:     AuthService,
 				RecordDataSet: RecordDataSet{
 					RecordData{
-						SubrecordType:   egtsSrResultCode,
+						SubrecordType:   SrResultCodeType,
 						SubrecordLength: 1,
 						SubrecordData: &SrResultCode{
 							ResultCode: egtsPcOk,

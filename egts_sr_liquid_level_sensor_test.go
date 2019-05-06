@@ -47,7 +47,7 @@ func TestEgtsSrLiquidLevelSensorRs(t *testing.T) {
 	liquidLevelRDRDBytes := append([]byte{0x1B, 0x07, 0x00}, testSrLiquidLevelSensorBytes...)
 	liquidLevelRD := RecordDataSet{
 		RecordData{
-			SubrecordType:   egtsSrLiquidLevelSensor,
+			SubrecordType:   SrLiquidLevelSensorType,
 			SubrecordLength: 7,
 			SubrecordData:   &testSrLiquidLevelSensor,
 		},

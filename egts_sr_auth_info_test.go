@@ -42,7 +42,7 @@ var (
 				RecipientServiceType:     AuthService,
 				RecordDataSet: RecordDataSet{
 					RecordData{
-						SubrecordType:   egtsSrAuthInfo,
+						SubrecordType:   SrAuthInfoType,
 						SubrecordLength: 37,
 						SubrecordData: &SrAuthInfo{
 							UserName:     "800",

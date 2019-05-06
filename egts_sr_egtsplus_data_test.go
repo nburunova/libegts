@@ -59,7 +59,7 @@ func TestStorageRecordRs(t *testing.T) {
 	egtsPlusRDBytes := append([]byte{0x0F, 0x1A, 0x00}, srEgtsPlusBytes...)
 	egtsPlusDataRD := RecordDataSet{
 		RecordData{
-			SubrecordType:   egtsSrEgtsPlusData,
+			SubrecordType:   SrEgtsPlusDataType,
 			SubrecordLength: testEgtsPlusData.Length(),
 			SubrecordData:   &testEgtsPlusData,
 		},

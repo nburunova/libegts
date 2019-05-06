@@ -35,27 +35,27 @@ func (rds *RecordDataSet) Decode(recDS []byte) error {
 		subRecordBytes := buf.Next(int(rd.SubrecordLength))
 
 		switch rd.SubrecordType {
-		case egtsSrPosData:
+		case SrPosDataType:
 			rd.SubrecordData = &SrPosData{}
-		case egtsSrTermIdentity:
+		case SrTermIdentityType:
 			rd.SubrecordData = &SrTermIdentity{}
-		case egtsSrRecordResponse:
+		case SrRecordResponseType:
 			rd.SubrecordData = &SrResponse{}
-		case egtsSrResultCode:
+		case SrResultCodeType:
 			rd.SubrecordData = &SrResultCode{}
-		case egtsSrExtPosData:
+		case SrExtPosDataType:
 			rd.SubrecordData = &SrExtPosData{}
-		case egtsSrAdSensorsData:
+		case SrAdSensorsDataType:
 			rd.SubrecordData = &SrAdSensorsData{}
-		case egtsSrStateData:
+		case SrStateDataType:
 			rd.SubrecordData = &SrStateData{}
-		case egtsSrLiquidLevelSensor:
+		case SrLiquidLevelSensorType:
 			rd.SubrecordData = &SrLiquidLevelSensor{}
-		case egtsSrAbsCntrData:
+		case SrAbsCntrDataType:
 			rd.SubrecordData = &SrAbsCntrData{}
-		case egtsSrAuthInfo:
+		case SrAuthInfoType:
 			rd.SubrecordData = &SrAuthInfo{}
-		case egtsSrEgtsPlusData:
+		case SrEgtsPlusDataType:
 			rd.SubrecordData = &StorageRecord{}
 		default:
 			return fmt.Errorf("Не известный пакета: %d", rd.SubrecordType)

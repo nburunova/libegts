@@ -48,7 +48,7 @@ func TestEgtsSrExtPosDataRs(t *testing.T) {
 	extPosDataRDBytes := append([]byte{0x11, 0x06, 0x00}, extPosDataBytes...)
 	extPosDataRD := RecordDataSet{
 		RecordData{
-			SubrecordType:   egtsSrExtPosData,
+			SubrecordType:   SrExtPosDataType,
 			SubrecordLength: 6,
 			SubrecordData:   &testEgtsSrExtPosData,
 		},
