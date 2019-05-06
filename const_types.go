@@ -18,8 +18,8 @@ const egtsSrAbsLoopinData = 26
 const egtsSrLiquidLevelSensor = 27
 const egtsSrPassengersCounters = 28
 
-const egtsPtAppdata = 1
-const egtsPtResponse = 0
+const PtAppdataPacket = 1
+const PtResponsePacket = 0
 
-const egtsAuthService = 1
-const egtsTeledataService = 2
+const AuthService = 1
+const TeledataService = 2

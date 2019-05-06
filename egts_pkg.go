@@ -108,10 +108,10 @@ func (p *Package) Decode(content []byte) (uint8, error) {
 		return egtsPcIncDataform, fmt.Errorf("Не считать тело пакета: %v", err)
 	}
 	switch p.PacketType {
-	case egtsPtAppdata:
+	case PtAppdataPacket:
 		p.ServicesFrameData = &ServiceDataSet{}
 		break
-	case egtsPtResponse:
+	case PtResponsePacket:
 		p.ServicesFrameData = &PtResponse{}
 		break
 	default:

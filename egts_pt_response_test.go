@@ -19,7 +19,7 @@ var (
 		HeaderEncoding:   0,
 		FrameDataLength:  3,
 		PacketIdentifier: 137,
-		PacketType:       egtsPtResponse,
+		PacketType:       PtResponsePacket,
 		HeaderCheckSum:   74,
 		ServicesFrameData: &PtResponse{
 			ResponsePacketID: 14357,
